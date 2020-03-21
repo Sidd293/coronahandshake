@@ -1,3 +1,4 @@
+var sco = 0
 var f 
 var fac = 1
 var sc = 200
@@ -39,9 +40,11 @@ lyf = width
 function draw() {
  
   background(255);
+  text('score is-"+sco,0,30)
+       sco++
   sc+=.5
 text("instructions",width-100,10)
-  if(mouseX>width-100&&mouseX<width,mouseY<10&&mouseY>0)
+  if(mouseX>width-100&&mouseX<width,mouseY<20&&mouseY>0)
   { image(ins,0,0,width,height)
   }
   
