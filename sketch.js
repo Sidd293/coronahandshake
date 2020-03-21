@@ -69,7 +69,7 @@ for (var c = 0 ; c<15;c++)
 
   if((0-px[c])*(0-px[c])+(mouseX-py[c])*(mouseX-py[c])<40*40)
   {
- lyf =lyf-sc*.01*f;
+ lyf =lyf-sc*.01*fac*f;
   
   }
   
