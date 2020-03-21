@@ -12,6 +12,7 @@ var rh
 var py=[]
 var sx=[]
 var px=[]
+var snd
 
 function preload()
 {
@@ -21,6 +22,7 @@ function preload()
      sz = loadImage('sanet.png') 
  sh= loadImage('hstop.png') 
   ins=loadImage('INS2.png') 
+  snd =loadSound('coronaguitar,mp3')
   
 }
 function setup() {
@@ -35,10 +37,11 @@ function setup() {
     }
 lyf = width
  f = 1
+  snd.play()
 }
 
 function draw() {
- 
+ snd.loop();
   background(255);
   text('score is-'+sco,0,30)
        sco++
