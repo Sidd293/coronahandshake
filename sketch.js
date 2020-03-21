@@ -40,7 +40,7 @@ lyf = width
 function draw() {
  
   background(255);
-  text('score is-"+sco,0,30)
+  text('score is-'+sco,0,30)
        sco++
   sc+=.5
 text("instructions",width-100,10)
