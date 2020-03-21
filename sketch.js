@@ -28,7 +28,7 @@ function setup() {
 
 
   
-  for(var i=0;i<05;i++)  
+  for(var i=0;i<09;i++)  
   {sx[i]=random(width,width+200)
    py[i]=random(-60,height)
    px[i]=sx[i]
@@ -54,7 +54,7 @@ text("instructions",width-100,10)
   
   
   image(lh,0,mouseX,40,40)
-for (var j=0;j<05;j++)
+for (var j=0;j<09;j++)
   {image(rh,px[j],py[j],40,40)
   px[j] = px[j] - sc*.01*fac;
    if (px[j]<0)
@@ -64,7 +64,7 @@ for (var j=0;j<05;j++)
    py[j]=random(-60,height)
    }
    }
-for (var c = 0 ; c<05;c++)
+for (var c = 0 ; c<09;c++)
 {
 
   if((0-px[c])*(0-px[c])+(mouseX-py[c])*(mouseX-py[c])<40*40)
