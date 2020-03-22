@@ -41,7 +41,7 @@ lyf = width
 }
 
 function draw() {
-snd.loop();
+//snd.loop();
   background(255);
   text('score is-'+sco,0,30)
        sco++
