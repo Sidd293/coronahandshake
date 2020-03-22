@@ -22,7 +22,7 @@ function preload()
      sz = loadImage('sanet.png') 
  sh= loadImage('hstop.png') 
   ins=loadImage('INS2.png') 
-  snd =loadSound('coronaguitar,mp3')
+  snd =loadSound('coronaguitar.mp3')
   
 }
 function setup() {
