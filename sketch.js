@@ -27,7 +27,7 @@ function preload()
 }
 function setup() {
   createCanvas(350,500);
-
+snd.play()
 
   
   for(var i=0;i<15;i++)  
@@ -37,11 +37,11 @@ function setup() {
     }
 lyf = width
  f = 1
-  snd.play()
+  
 }
 
 function draw() {
- snd.loop();
+snd.loop();
   background(255);
   text('score is-'+sco,0,30)
        sco++
