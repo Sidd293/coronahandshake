@@ -13,6 +13,7 @@ var py=[]
 var sx=[]
 var px=[]
 var snd
+var mx=0
 
 function preload()
 {
@@ -58,8 +59,9 @@ if(sco%600==0)
  
   image(sh,shx,shy  ,40,40)
   
+  mx=map(mouseX,0,width,0,height)
   
-  image(lh,0,mouseX,40,40)
+  image(lh,0,mx,40,40)
 for (var j=0;j<15;j++)
   {image(rh,px[j],py[j],40,40)
   px[j] = px[j] - sc*.01*fac;
@@ -73,7 +75,7 @@ for (var j=0;j<15;j++)
 for (var c = 0 ; c<15;c++)
 {
 
-  if((0-px[c])*(0-px[c])+(mouseX-py[c])*(mouseX-py[c])<40*40)
+  if((0-px[c])*(0-px[c])+(mx-py[c])*(mx-py[c])<40*40)
   {
  lyf =lyf-sc*.01*fac;
   
@@ -84,12 +86,12 @@ for (var c = 0 ; c<15;c++)
 }
   
   
-  if((0-szx  )*(0-szx  )+(mouseX-szy  )*(mouseX-szy  )<40*40)
+  if((0-szx  )*(0-szx  )+(mx-szy  )*(mx-szy  )<40*40)
   {
  lyf = width
   
   }
-   if((0-shx  )*(0-shx  )+(mouseX-shy  )*(mouseX-shy  )<40*40)
+   if((0-shx  )*(0-shx  )+(mx-shy  )*(mx-shy  )<40*40)
   {
 f = width
     sc = sc - 6
