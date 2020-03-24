@@ -24,7 +24,7 @@ function preload()
  sh= loadImage('hstop.png') 
   ins=loadImage('INS2.png') 
   snd =loadSound('coronaguitar.mp3')
-  
+  bg = loadimage('coronabg.jpg')
 }
 function setup() {
   createCanvas(350,500);
@@ -44,6 +44,7 @@ lyf = width
 function draw() {
 //snd.loop();
   background(255);
+  image(bg,0,0,width,height)
   text('score is-'+sco,0,30)
        sco++
   sc+=.5
