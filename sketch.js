@@ -24,7 +24,7 @@ function preload()
  sh= loadImage('hstop.png') 
   ins=loadImage('INS2.png') 
   snd =loadSound('coronaguitar.mp3')
-  bg = loadimage('coronabg.png')
+  bg = loadImage('coronabg.png')
 }
 function setup() {
   createCanvas(350,500);
