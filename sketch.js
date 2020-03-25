@@ -60,7 +60,8 @@ if(sco%600==0)
  
   image(sh,shx,shy  ,40,40)
   
-  mx=map(mouseX,0,width,0,height)
+  mx=  map(gamma,-90,90,-height/2,height/2)
+  //map(mouseX,0,width,0,height)
   
   image(lh,0,mx,40,40)
 for (var j=0;j<15;j++)
@@ -132,3 +133,9 @@ else
 console.log(sc) 
 
 }
+window.addEventListener('deviceorientation', function(e) 
+{
+  alphax = e.alpha;
+  beta = e.beta;
+  gamma = e.gamma;
+});
