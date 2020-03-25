@@ -60,7 +60,7 @@ if(sco%600==0)
  
   image(sh,shx,shy  ,40,40)
   
-  mx=  map(gamma,-90,90,0,height)
+  mx=  map(gamma,-55,55,0,height)
   //map(mouseX,0,width,0,height)
   
   image(lh,0,mx,40,40)
